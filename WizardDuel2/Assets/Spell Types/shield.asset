@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0383f2c98602a134cbcf0d84298d471e, type: 3}
+  m_Name: shield
+  m_EditorClassIdentifier: 
+  spelltype: 0
+  _typesprite: {fileID: 0}
+  _forceMod: 0.5
+  _pierceMod: 0.7
+  _toughnessMod: 0.9
+  _resistMod: 1.3
