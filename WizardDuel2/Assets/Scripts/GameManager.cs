@@ -1,21 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //set GameManager as a Singleton
+    private static GameManager instance;
     
-    int roundCounter;
-    enum Phase { cast1, peek, cast2, resolve, nextround };
-    Phase phaseKeeper;
+    public int roundCounter;
+    public enum Phase { cast1, peek, cast2, resolve, nextround };
+    public Phase phaseKeeper;
 
     bool player1confirm = false;
     bool player2confirm = false;
     float roundTimer = 10f; //TODO: change this to a game setting later
-    float nextRoundChangeTimer;
-    
-    //TODO: Find text children and update    
+    public float nextRoundChangeTimer;
+
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+        set
+        {
+            instance = value;
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Start()
     {
@@ -26,14 +48,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (phaseKeeper == Phase.cast1 || phaseKeeper == Phase.cast2)
+        //rollover to next phase based on timer
+        if (nextRoundChangeTimer < Time.fixedTime)
         {
-            if (nextRoundChangeTimer < Time.fixedTime)
-            {
-                NextPhase();
-            }
+            NextPhase();
         }
-
+        
         if (player1confirm && player2confirm)
         {
             NextPhase();
@@ -61,6 +81,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //helper method to reset player confirmation buttons and rollover round
     void NextPhase()
     {
         phaseKeeper++;
@@ -69,8 +90,6 @@ public class GameManager : MonoBehaviour
             roundCounter++;
             phaseKeeper = Phase.cast1;
         }
-        Debug.Log("Round is " + roundCounter);
-        Debug.Log("Phase is " + phaseKeeper);
         player1confirm = false;
         player2confirm = false;
         nextRoundChangeTimer = Time.fixedTime + roundTimer;
