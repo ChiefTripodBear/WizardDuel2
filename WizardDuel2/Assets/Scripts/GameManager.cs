@@ -2,17 +2,8 @@
 
 public class GameManager : MonoBehaviour
 {
-    //set GameManager as a Singleton
+    #region singleton setup
     private static GameManager instance;
-    
-    public int roundCounter;
-    public enum Phase { cast1, peek, cast2, resolve, nextround };
-    public Phase phaseKeeper;
-
-    bool player1confirm = false;
-    bool player2confirm = false;
-    float roundTimer = 10f; //TODO: change this to a game setting later
-    public float nextRoundChangeTimer;
 
     public static GameManager Instance
     {
@@ -26,6 +17,23 @@ public class GameManager : MonoBehaviour
             instance = value;
         }
     }
+
+    #endregion
+
+    #region Round and Phase variables
+    /// <summary>
+    /// Round and Phase variables
+    /// </summary>
+    public int roundCounter;
+    public enum Phase { cast1, peek, cast2, resolve, nextround };
+    public Phase phaseKeeper;
+    bool player1confirm = false;
+    bool player2confirm = false;
+    float roundTimer = 10f; //TODO: change this to a game setting later
+    public float nextRoundChangeTimer;
+    #endregion
+
+    public bool spellcastingEnabled = false;
 
     private void Awake()
     {
@@ -48,25 +56,16 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        //rollover to next phase based on timer
-        if (nextRoundChangeTimer < Time.fixedTime)
-        {
-            NextPhase();
-        }
-        
-        if (player1confirm && player2confirm)
-        {
-            NextPhase();
-        }
+        ProcessNextPhase();
 
         if (phaseKeeper == Phase.cast1)
         {
-            //enable spellcasting
+            spellcastingEnabled = true;
         }
 
         if (phaseKeeper == Phase.cast2)
         {
-            //enable spellcasting, but check against prior round spell data
+            spellcastingEnabled = true;
         }
 
         if (phaseKeeper == Phase.peek)
@@ -81,18 +80,24 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+
     //helper method to reset player confirmation buttons and rollover round
-    void NextPhase()
+    void ProcessNextPhase()
     {
-        phaseKeeper++;
-        if (phaseKeeper == Phase.nextround)
+        if ((player1confirm && player2confirm) || (nextRoundChangeTimer < Time.fixedTime))
         {
-            roundCounter++;
-            phaseKeeper = Phase.cast1;
+            phaseKeeper++;
+            if (phaseKeeper == Phase.nextround)
+            {
+                roundCounter++;
+                phaseKeeper = Phase.cast1;
+            }
+            player1confirm = false;
+            player2confirm = false;
+            spellcastingEnabled = false;
+            nextRoundChangeTimer = Time.fixedTime + roundTimer;
         }
-        player1confirm = false;
-        player2confirm = false;
-        nextRoundChangeTimer = Time.fixedTime + roundTimer;
     }
 
     public void Player1Confirm()
