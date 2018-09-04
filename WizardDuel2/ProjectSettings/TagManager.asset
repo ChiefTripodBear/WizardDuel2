@@ -13,8 +13,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Bars
+  - UnderBar
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UnderBar
+    uniqueID: 3243649743
+    locked: 0
+  - name: Bars
+    uniqueID: 2415912417
     locked: 0
