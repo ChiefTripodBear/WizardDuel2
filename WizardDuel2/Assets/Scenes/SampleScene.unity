@@ -210,49 +210,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 212433829971221980, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212670391133337702, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212501851188250478, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212443566183111440, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212151151475267404, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212133751280272180, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212456228065116252, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 212596394471376908, guid: 4230eebf18ff69d438cb852702f1dc88,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4230eebf18ff69d438cb852702f1dc88, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &324310989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114587505225228372, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1034478051}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!114 &509114640 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114942108516471262, guid: c0d94b30de525fd4e92ec8a902ad1b9e,
@@ -292,7 +258,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.33962262, g: 0.28996083, b: 0.28996083, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -307,7 +273,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 277.81543
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -330,7 +296,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 409.4, y: 278.65, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,10 +408,6 @@ Prefab:
       propertyPath: m_Name
       value: SpellDisplayContainer
       objectReference: {fileID: 0}
-    - target: {fileID: 1684671392494424, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5, type: 2}
   m_IsPrefabAsset: 0
@@ -496,6 +458,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0d94b30de525fd4e92ec8a902ad1b9e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1319888043 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114115775587370282, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1034478051}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!224 &1488172037 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224591835342099384, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5,
@@ -563,6 +531,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579002436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114059825763776172, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1034478051}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1941414215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114790304685256784, guid: 8e7a07d964eda7a4eaa90fbbb9b7d8f5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1034478051}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1961462220
 Prefab:
   m_ObjectHideFlags: 0
@@ -602,8 +582,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114337505797823680, guid: face46c8035ecab4ea29f56497542074, type: 2}
+    - target: {fileID: 114404670305248108, guid: face46c8035ecab4ea29f56497542074,
+        type: 2}
+      propertyPath: fireElement
+      value: 
+      objectReference: {fileID: 1579002436}
+    - target: {fileID: 114404670305248108, guid: face46c8035ecab4ea29f56497542074,
+        type: 2}
+      propertyPath: waterElement
+      value: 
+      objectReference: {fileID: 324310989}
+    - target: {fileID: 114404670305248108, guid: face46c8035ecab4ea29f56497542074,
+        type: 2}
+      propertyPath: airElement
+      value: 
+      objectReference: {fileID: 1319888043}
+    - target: {fileID: 114404670305248108, guid: face46c8035ecab4ea29f56497542074,
+        type: 2}
+      propertyPath: earthElement
+      value: 
+      objectReference: {fileID: 1941414215}
+    - target: {fileID: 1711243664050916, guid: face46c8035ecab4ea29f56497542074, type: 2}
+      propertyPath: m_Name
+      value: Player 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: face46c8035ecab4ea29f56497542074, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &2100752869

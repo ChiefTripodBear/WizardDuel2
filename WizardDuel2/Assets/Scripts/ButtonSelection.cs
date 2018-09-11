@@ -8,7 +8,7 @@ public class ButtonSelection : MonoBehaviour {
     public Sprite notSelected;
     public Sprite selected;
     public Button elementButton;
-    bool isSelected = false;
+    public bool isSelected = false;
 
     private void Start()
     {

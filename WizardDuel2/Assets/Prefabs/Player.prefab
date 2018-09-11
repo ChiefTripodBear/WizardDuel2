@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4522425130246206}
-  - component: {fileID: 114337505797823680}
+  - component: {fileID: 114404670305248108}
   m_Layer: 0
   m_Name: Spell Calculator
   m_TagString: Untagged
@@ -70,7 +70,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114337505797823680
+--- !u!114 &114404670305248108
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,6 +81,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f06af7923b52b47af7df0a2e35ebd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireElement: {fileID: 0}
+  waterElement: {fileID: 0}
+  airElement: {fileID: 0}
+  earthElement: {fileID: 0}
 --- !u!114 &114700871163744460
 MonoBehaviour:
   m_ObjectHideFlags: 1
