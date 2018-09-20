@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class SpellCalculator : MonoBehaviour
 {
-    GameManager gameManager;
-    //a link to the buttons and a script reference to collect the bool from the button
+
+
+
+    /*
     Button fireElement;
     ButtonSelection fire;
     Button waterElement;
@@ -16,9 +18,6 @@ public class SpellCalculator : MonoBehaviour
     Button earthElement;
     ButtonSelection earth;
 
-    //dictionary to hold the spellinputs
-    Dictionary<string, bool> spellInput;
-
     SpellTypes selectedType;
     SpellRecipes selectedRecipe;
 
@@ -27,7 +26,6 @@ public class SpellCalculator : MonoBehaviour
 
     private void Start()
     {
-        gameManager = GameManager.Instance;
         fire = fireElement.GetComponent(typeof(ButtonSelection)) as ButtonSelection;
         water = waterElement.GetComponent(typeof(ButtonSelection)) as ButtonSelection;
         air = airElement.GetComponent(typeof(ButtonSelection)) as ButtonSelection;
@@ -36,7 +34,7 @@ public class SpellCalculator : MonoBehaviour
 
     private void Update()
     {
-        if (gameManager.spellcastingEnabled)
+        if (GameManager.Instance.spellcastingEnabled)
         {
             spellInput.Add(fireElement.name, fire.isSelected);
             spellInput.Add(waterElement.name, water.isSelected);
@@ -45,5 +43,5 @@ public class SpellCalculator : MonoBehaviour
             print(spellInput);
         }
     }
-
+    */
 }

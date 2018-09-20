@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,6 +33,8 @@ public class GameManager : MonoBehaviour
     bool player2confirm = false;
     float roundTimer = 10f; //TODO: change this to a game setting later
     public float nextRoundChangeTimer;
+
+    List<ButtonSelection> elementButtons;
     #endregion
 
     public bool spellcastingEnabled = false;
@@ -49,13 +53,18 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        //initialise round and phase
         roundCounter = 1;
         phaseKeeper = Phase.cast1;
         nextRoundChangeTimer = Time.fixedTime + roundTimer;
+
+        //find all button selection objects and add them to a list
+        elementButtons = new List<ButtonSelection>(FindObjectsOfType<ButtonSelection>());
     }
 
     void Update()
     {
+
         ProcessNextPhase();
 
         if (phaseKeeper == Phase.cast1)
@@ -97,6 +106,9 @@ public class GameManager : MonoBehaviour
             player2confirm = false;
             spellcastingEnabled = false;
             nextRoundChangeTimer = Time.fixedTime + roundTimer;
+
+            //loop through our buttons and unselect all elements
+            elementButtons.ForEach(elementButtons => elementButtons.UnselectButtons());
         }
     }
 
