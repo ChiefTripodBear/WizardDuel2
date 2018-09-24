@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonSelection : MonoBehaviour {
+public class ElementButtonSelection : MonoBehaviour {
 
     public Sprite notSelected;
     public Sprite selected;
@@ -23,28 +23,30 @@ public class ButtonSelection : MonoBehaviour {
     {
         if (isSelected)
         { //if element is selected, deselect button and change image
-            SelectUnselectElement();
-            SpellManager.Instance.selectedElements_cnt--;
+            UnSelectElement();
         }
         else
-        {
-            if (SpellManager.Instance.selectedElements_cnt < 2)
-            {//if element isnt selected, check that selectedElements is less than 2 then select button and change image
-                SelectUnselectElement();
-                SpellManager.Instance.selectedElements_cnt++;
-            }
-            //if selectedElements = 2 or more, do nothing
+        {//if the element isn't selected already
+            SelectElement();
         }
     }
 
-    void SelectUnselectElement()
+    void SelectElement()
+    {
+        if (SpellManager.Instance.selectedElements_cnt < 2)
+        { //if element isnt selected, check that selectedElements is less than 2 then select button and change image
+            isSelected = !isSelected;
+            SpellManager.Instance.selectedElements_cnt++;
+            elementButton.image.sprite = selected;
+        }
+        //if selectedElements = 2 or more, do nothing
+    }
+
+    void UnSelectElement()
     {
         isSelected = !isSelected;
-        if (!isSelected)
-        {
-            elementButton.image.sprite = notSelected;
-        }
-        else elementButton.image.sprite = selected;
+        SpellManager.Instance.selectedElements_cnt--;
+        elementButton.image.sprite = notSelected;
     }
 
     public void UnselectButtons()

@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     float roundTimer = 10f; //TODO: change this to a game setting later
     public float nextRoundChangeTimer;
 
-    List<ButtonSelection> elementButtons;
+    List<ElementButtonSelection> elementButtons;
     #endregion
 
     public bool spellcastingEnabled = false;
@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
         }
 
         instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     void Start()
@@ -59,7 +58,7 @@ public class GameManager : MonoBehaviour
         nextRoundChangeTimer = Time.fixedTime + roundTimer;
 
         //find all button selection objects and add them to a list
-        elementButtons = new List<ButtonSelection>(FindObjectsOfType<ButtonSelection>());
+        elementButtons = new List<ElementButtonSelection>(FindObjectsOfType<ElementButtonSelection>());
     }
 
     void Update()
