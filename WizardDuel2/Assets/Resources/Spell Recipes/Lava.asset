@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9342d5d389d3f414899759f538e7a472, type: 3}
-  m_Name: Gas
+  m_Name: Lava
   m_EditorClassIdentifier: 
-  Elements: 0000000001000000
+  recipe: 5
   _spellSprite: {fileID: 0}
-  _force: 0.5
-  _pierce: 2
+  _force: 1.5
+  _pierce: 0.5
+  _toughness: 1
   _resist: 1.5
-  _toughness: 0.5
   _spellCost: 3
-  hasEffect: 1
+  hasEffect: 0
   effectSelf: 0
-  roundCount: 3
-  effectStat: 4
-  effectValue: -5
+  roundCount: 0
+  effectStat: 0
+  effectValue: 1

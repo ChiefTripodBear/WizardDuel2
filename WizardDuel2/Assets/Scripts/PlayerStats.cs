@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
+public enum PlayerOwner { Player1, Player2 };
 
 public class PlayerStats : MonoBehaviour
 {

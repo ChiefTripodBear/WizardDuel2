@@ -33,8 +33,6 @@ public class SpellManager : MonoBehaviour
         instance = this;
     }
 
-    public int selectedElements_cnt = 0; //holds from button scripts the number of selected elements
-
     void Start ()
     {
 	    
@@ -44,15 +42,5 @@ public class SpellManager : MonoBehaviour
     {
 		
 	}
-
-    void AddElement()
-    {
-
-    }
-
-    void RemoveElement()
-    {
-
-    }
 }
 

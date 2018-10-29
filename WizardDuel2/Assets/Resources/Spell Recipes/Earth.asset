@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9342d5d389d3f414899759f538e7a472, type: 3}
-  m_Name: Ice
+  m_Name: Earth
   m_EditorClassIdentifier: 
-  Elements: 0300000001000000
+  recipe: 4
   _spellSprite: {fileID: 0}
-  _force: 1.5
-  _pierce: 1.5
-  _resist: 1
-  _toughness: 0.5
-  _spellCost: 3
+  _force: 2
+  _pierce: 0.5
+  _toughness: 2
+  _resist: 0.5
+  _spellCost: 2
   hasEffect: 0
   effectSelf: 0
   roundCount: 0

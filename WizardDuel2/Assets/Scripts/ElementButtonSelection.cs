@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,49 +8,53 @@ public class ElementButtonSelection : MonoBehaviour {
     public Sprite selected;
     public Button elementButton;
     public bool isSelected = false;
-    public string elementName = null;
+    public Element element;                                                         //reference to the buttons' linked element
+
+    SpellCalculator calcScript;                                                     //reference to the relevant players spell calculator
 
     private void Start()
     {
         elementButton.image.sprite = notSelected;
-        //return the name of the element on the button
-        elementName = elementButton.name.Substring(0, this.gameObject.name.IndexOf(" ", 0));
+        calcScript = GameObject.Find("Player1").GetComponentInChildren<SpellCalculator>();      //find the object for the owner player and in its children there should be a spell calculator
     }
 
     public void PressButton()
     {
         if (isSelected)
-        { //if element is selected, deselect button and change image
+        {                                                                       //if element is selected, deselect button and change image
             UnSelectElement();
         }
         else
-        {//if the element isn't selected already
+        {                                                                       //if the element isn't selected already
             SelectElement();
         }
     }
 
     void SelectElement()
     {
-        if (SpellManager.Instance.selectedElements_cnt < 2)
-        { //if element isnt selected, check that selectedElements is less than 2 then select button and change image
+        if (calcScript.selectedElements_cnt < 2)
+        {                                                                //if element isnt selected, check that selectedElements is less than 2 then select button and change image
             isSelected = !isSelected;
-            SpellManager.Instance.selectedElements_cnt++;
+            calcScript.selectedElements_cnt++;
             elementButton.image.sprite = selected;
+            calcScript.ListElement(element, true);                         //add button element to active element array in spell calculator
         }
-        //if selectedElements = 2 or more, do nothing
+                                                                                //if selectedElements = 2 or more, do nothing
     }
 
     void UnSelectElement()
     {
         isSelected = !isSelected;
-        SpellManager.Instance.selectedElements_cnt--;
+        calcScript.selectedElements_cnt--;
         elementButton.image.sprite = notSelected;
+        calcScript.ListElement(element, false);                              //remove button element to active element array in spell calculator
     }
 
     public void UnselectButtons()
-    {
+    {                                                                           //run this each new phase to reset buttons and element array
         isSelected = false;
         elementButton.image.sprite = notSelected;
-        SpellManager.Instance.selectedElements_cnt = 0;
+        calcScript.selectedElements_cnt = 0;
+        calcScript.RemoveAllElements(element);                             //remove all elements to active element array in spell calculator
     }
 }

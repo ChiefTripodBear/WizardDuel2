@@ -9,17 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9342d5d389d3f414899759f538e7a472, type: 3}
-  m_Name: Air
+  m_Name: Ice
   m_EditorClassIdentifier: 
-  Elements: 0100000001000000
+  recipe: 10
   _spellSprite: {fileID: 0}
-  _force: 1
+  _force: 1.5
   _pierce: 1.5
-  _resist: 2
   _toughness: 0.5
-  _spellCost: 2
-  hasEffect: 1
+  _resist: 1
+  _spellCost: 3
+  hasEffect: 0
   effectSelf: 0
-  roundCount: 1
-  effectStat: 7
+  roundCount: 0
+  effectStat: 0
   effectValue: 1

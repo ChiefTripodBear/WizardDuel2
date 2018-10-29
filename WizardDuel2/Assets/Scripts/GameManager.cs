@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public Phase phaseKeeper;
     bool player1confirm = false;
     bool player2confirm = false;
-    float roundTimer = 10f; //TODO: change this to a game setting later
+    float roundTimer = 30f; //TODO: change this to a game setting later
     public float nextRoundChangeTimer;
 
     List<ElementButtonSelection> elementButtons;
@@ -88,8 +88,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
     //helper method to reset player confirmation buttons and rollover round
     void ProcessNextPhase()
     {
@@ -100,14 +98,14 @@ public class GameManager : MonoBehaviour
             {
                 roundCounter++;
                 phaseKeeper = Phase.cast1;
+                //loop through our buttons and unselect all elements
+                elementButtons.ForEach(elementButtons => elementButtons.UnselectButtons());
+
             }
             player1confirm = false;
             player2confirm = false;
             spellcastingEnabled = false;
             nextRoundChangeTimer = Time.fixedTime + roundTimer;
-
-            //loop through our buttons and unselect all elements
-            elementButtons.ForEach(elementButtons => elementButtons.UnselectButtons());
         }
     }
 
