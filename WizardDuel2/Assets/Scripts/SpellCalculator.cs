@@ -10,6 +10,7 @@ public class SpellCalculator : MonoBehaviour
     SpellTypes activeType;                                              //Hold the activeSpellType
 
     public SpellRecipes activeSpell;                                    //Hold the activeSpell
+    public SType selectedType;                                          //Spelltype selected by the buttons
     public int selectedElements_cnt = 0;                                //holds from button scripts the number of selected elements (to limit selection to 2)
     public Element activeElements;                                      //the active element, updated by bitwise operators
 
@@ -18,14 +19,13 @@ public class SpellCalculator : MonoBehaviour
         allTypes = Resources.LoadAll<SpellTypes>("");                   //Load all SpellTypes in the resources folder
         allRecipes = Resources.LoadAll<SpellRecipes>("");               //Load all SpellRecipes in the resources folder
     }
-
-    //holds all methods for management of element buttons and element list
+                                                                        //holds all methods for management of element buttons and element list
     #region ElementListManagement                                       
     public void ListElement(Element element, bool isAdding)             //this method is called from the element buttons to add the activated element to the array
     {
         if (!isAdding)
         {
-            activeElements &= ~element;                  //use XOR to remove the passed in element from the active element
+            activeElements &= ~element;                                 //use XOR to remove the passed in element from the active element
         }
         else
         {
@@ -37,9 +37,8 @@ public class SpellCalculator : MonoBehaviour
     {
         activeElements = Element.None;
     }
-    #endregion                                                          //all the code that relates to element array and button management 
 
-    private void Update()
+    private void SpellUpdate()
     {
         if (selectedElements_cnt == 0)
         {
@@ -57,5 +56,18 @@ public class SpellCalculator : MonoBehaviour
             }
         }
     }
-    
+    #endregion                                                          //all the code that relates to element array and button management 
+                                                                        //holds all methods for management of type buttons and active type
+    #region TypeManagement
+
+    public void TypeUpdate(SType type)                                  //pass in the active spell type from the button
+    {
+        selectedType = type;
+    }
+    #endregion TypeManagement
+
+    private void Update()
+    {
+        SpellUpdate();
+    }
 }

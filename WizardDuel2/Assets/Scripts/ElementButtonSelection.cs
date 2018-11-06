@@ -6,7 +6,7 @@ public class ElementButtonSelection : MonoBehaviour {
 
     public Sprite notSelected;
     public Sprite selected;
-    public Button elementButton;
+    public Button elementButton;                                                               //reference to the button on this gameobject
     public bool isSelected = false;
     public Element element;                                                         //reference to the buttons' linked element
 
@@ -14,6 +14,7 @@ public class ElementButtonSelection : MonoBehaviour {
 
     private void Start()
     {
+        elementButton = gameObject.GetComponent<Button>();
         elementButton.image.sprite = notSelected;
         calcScript = GameObject.Find("Player1").GetComponentInChildren<SpellCalculator>();      //find the object for the owner player and in its children there should be a spell calculator
     }
