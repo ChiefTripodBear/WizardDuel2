@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: shield
   m_EditorClassIdentifier: 
   spelltype: 0
+  stype: 4
   _typesprite: {fileID: 0}
   _forceMod: 0.5
   _pierceMod: 0.7

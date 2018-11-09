@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: ball
   m_EditorClassIdentifier: 
   spelltype: 0
+  stype: 1
   _typesprite: {fileID: 0}
   _forceMod: 1.3
   _pierceMod: 0.9

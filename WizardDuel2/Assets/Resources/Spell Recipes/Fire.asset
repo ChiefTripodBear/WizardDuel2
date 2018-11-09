@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recipe: 1
   _spellSprite: {fileID: 0}
-  _force: 1
-  _pierce: 1.5
-  _toughness: 1
-  _resist: 1.5
-  _spellCost: 2
+  _force: 10
+  _pierce: 15
+  _toughness: 10
+  _resist: 15
+  _spellCost: 20
   hasEffect: 0
   effectSelf: 0
   roundCount: 0

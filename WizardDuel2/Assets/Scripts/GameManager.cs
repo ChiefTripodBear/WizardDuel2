@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
     public float nextRoundChangeTimer;
 
     List<ElementButtonSelection> elementButtons;
+    List<TypeButtonSelection> typeButtons;
+    List<PowerSlider> powerSliders;
     #endregion
 
     public bool spellcastingEnabled = false;
@@ -59,6 +61,8 @@ public class GameManager : MonoBehaviour
 
         //find all button selection objects and add them to a list
         elementButtons = new List<ElementButtonSelection>(FindObjectsOfType<ElementButtonSelection>());
+        typeButtons = new List<TypeButtonSelection>(FindObjectsOfType<TypeButtonSelection>());
+        powerSliders = new List<PowerSlider>(FindObjectsOfType<PowerSlider>());
     }
 
     void Update()
@@ -100,7 +104,8 @@ public class GameManager : MonoBehaviour
                 phaseKeeper = Phase.cast1;
                 //loop through our buttons and unselect all elements
                 elementButtons.ForEach(elementButtons => elementButtons.UnselectButtons());
-
+                typeButtons.ForEach(typeButtons => typeButtons.UnselectButtons());
+                powerSliders.ForEach(powerSliders => powerSliders.ResetPowerMeter());
             }
             player1confirm = false;
             player2confirm = false;

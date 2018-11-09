@@ -19,6 +19,7 @@ public class SpellTypes : ScriptableObject
 {
     public enum SpellType { offensive, defensive };
     public SpellType spelltype;
+    public SType stype;
     public Sprite _typesprite;
 
     public float _forceMod;

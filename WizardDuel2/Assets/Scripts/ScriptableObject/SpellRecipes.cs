@@ -17,6 +17,8 @@ using UnityEngine;
                               Sand = 6              //00000110
                                 };
 
+public enum EffectStat { _force, _pierce, _resist, _toughness, life, mana, power, peek };
+
 [CreateAssetMenu]
 public class SpellRecipes : ScriptableObject
 {
@@ -31,7 +33,6 @@ public class SpellRecipes : ScriptableObject
     public bool hasEffect;
     public bool effectSelf;
     public int roundCount;
-    public enum EffectStat { _force, _pierce, _resist, _toughness, life, mana, power, peek};
     public EffectStat effectStat;
     public float effectValue = 1;
 }

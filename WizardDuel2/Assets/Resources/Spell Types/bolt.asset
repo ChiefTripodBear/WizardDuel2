@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: bolt
   m_EditorClassIdentifier: 
   spelltype: 0
+  stype: 2
   _typesprite: {fileID: 0}
   _forceMod: 0.9
   _pierceMod: 1.3

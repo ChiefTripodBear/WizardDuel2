@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: wall
   m_EditorClassIdentifier: 
   spelltype: 1
+  stype: 8
   _typesprite: {fileID: 0}
   _forceMod: 0.7
   _pierceMod: 0.5
