@@ -354,9 +354,89 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 114458545438719138, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: notSelected
+      value: 
+      objectReference: {fileID: 21300000, guid: 90c5a5208dfc3294680e6da081cbc685,
+        type: 3}
+    - target: {fileID: 114458545438719138, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: selected
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c47357e333d26143be78c887089c1fd,
+        type: 3}
+    - target: {fileID: 114458545438719138, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: typeButton
+      value: 
+      objectReference: {fileID: 1157837886}
+    - target: {fileID: 114752972042191970, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: selected
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d95544911fba5048b4a72a305672223,
+        type: 3}
+    - target: {fileID: 114752972042191970, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: typeButton
+      value: 
+      objectReference: {fileID: 1594203403}
+    - target: {fileID: 114493718494581176, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: typeButton
+      value: 
+      objectReference: {fileID: 1862859833}
+    - target: {fileID: 114493718494581176, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: selected
+      value: 
+      objectReference: {fileID: 21300000, guid: 44e14a6c3d872604887bb664737d224f,
+        type: 3}
+    - target: {fileID: 114493718494581176, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: notSelected
+      value: 
+      objectReference: {fileID: 21300000, guid: 64912ef9331a23c46b5ea48b911c7477,
+        type: 3}
+    - target: {fileID: 114552864967924222, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: notSelected
+      value: 
+      objectReference: {fileID: 21300000, guid: dd6814f5156bd5d49927bed95dc3687a,
+        type: 3}
+    - target: {fileID: 114552864967924222, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: selected
+      value: 
+      objectReference: {fileID: 21300000, guid: afa8475aba857704abb427dff6288dda,
+        type: 3}
+    - target: {fileID: 114552864967924222, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: typeButton
+      value: 
+      objectReference: {fileID: 1262985429}
+    - target: {fileID: 114752972042191970, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 2}
+      propertyPath: notSelected
+      value: 
+      objectReference: {fileID: 21300000, guid: dadbe8364755f5244b5a9cc1ab44db14,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da91155f7022864eac0fb50a2c38538, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1157837886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114027945194654274, guid: 7da91155f7022864eac0fb50a2c38538,
+    type: 2}
+  m_PrefabInternal: {fileID: 667283819}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1262985429 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114939557516532178, guid: 7da91155f7022864eac0fb50a2c38538,
+    type: 2}
+  m_PrefabInternal: {fileID: 667283819}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1551491620
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +499,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1594203403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114845036545566534, guid: 7da91155f7022864eac0fb50a2c38538,
+    type: 2}
+  m_PrefabInternal: {fileID: 667283819}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1862859833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114057254017802266, guid: 7da91155f7022864eac0fb50a2c38538,
+    type: 2}
+  m_PrefabInternal: {fileID: 667283819}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1866701247
 Prefab:
   m_ObjectHideFlags: 0
