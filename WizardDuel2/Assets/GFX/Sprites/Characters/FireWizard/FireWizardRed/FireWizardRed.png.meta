@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 34f4963dd927e6d4c8c391e920c4496c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FireWizardRed_FrontArm
+    21300002: FireWizardRed_Head
+    21300004: FireWizardRed_BackArm
+    21300006: FireWizardRed_Torso
+    21300008: FireWizardRed_FrontHand
+    21300010: FireWizardRed_Eyes
+    21300012: FireWizardRed_FrontLeg
+    21300014: FireWizardRed_BackLeg
+    21300016: FireWizardRed_Hair1
+    21300018: FireWizardRed_Hair2
+    21300020: FireWizardRed_FrontArm
+    21300022: FireWizardRed_Head
+    21300024: FireWizardRed_BackArm
+    21300026: FireWizardRed_Torso
+    21300028: FireWizardRed_Hand
+    21300030: FireWizardRed_Eyes
+    21300032: FireWizardRed_FrontLeg
+    21300034: FireWizardRed_BackLeg
+    21300036: FireWizardRed_Hair1
+    21300038: FireWizardRed_Hair2
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireWizardRed_FrontArm
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 724
+        width: 282
+        height: 299
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f3dd9d9ada95048bd29bda275e15f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Head
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 628
+        width: 301
+        height: 376
+      alignment: 9
+      pivot: {x: 0.5016611, y: 0.4973404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d717e94ede2cc41bc25ca192660023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_BackArm
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 567
+        width: 231
+        height: 394
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03f7caad17b82741a84d994c642def5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Torso
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 334
+        height: 524
+      alignment: 9
+      pivot: {x: 0.50149703, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af38048d4c4a36547b8074abe47500bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Hand
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 359
+        width: 197
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb278701ff67084ea573caf91b5cd52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Eyes
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 456
+        width: 132
+        height: 54
+      alignment: 9
+      pivot: {x: 0.5227273, y: 0.4814815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3d2bb0aaa93b0478ba5bdc2368a362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_FrontLeg
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 76
+        width: 199
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5025126, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b42478776c29b429cecc6c764e511e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_BackLeg
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 83
+        width: 129
+        height: 282
+      alignment: 9
+      pivot: {x: 0.503876, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d88564acc88dd458518c4569b58b19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Hair1
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 72
+        width: 84
+        height: 292
+      alignment: 9
+      pivot: {x: 0.49404764, y: 0.49828768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfd45858524a6145b42c5c9207e5fce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireWizardRed_Hair2
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 69
+        width: 84
+        height: 292
+      alignment: 9
+      pivot: {x: 0.5059524, y: 0.49828768}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5da7b9744d581a44966b05a4fb9cfbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 04901ba89d8172c4a889cfd921d6d924
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 636789660867472872
+  assetBundleName: 
+  assetBundleVariant: 
