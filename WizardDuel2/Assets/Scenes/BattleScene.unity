@@ -384,6 +384,11 @@ PrefabInstance:
       propertyPath: typeButton
       value: 
       objectReference: {fileID: 1157837886}
+    - target: {fileID: 114458545438719138, guid: 7da91155f7022864eac0fb50a2c38538,
+        type: 3}
+      propertyPath: isSelected
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114752972042191970, guid: 7da91155f7022864eac0fb50a2c38538,
         type: 3}
       propertyPath: selected
@@ -438,12 +443,12 @@ PrefabInstance:
     - target: {fileID: 224076762786494806, guid: 7da91155f7022864eac0fb50a2c38538,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224315518833794378, guid: 7da91155f7022864eac0fb50a2c38538,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da91155f7022864eac0fb50a2c38538, type: 3}
